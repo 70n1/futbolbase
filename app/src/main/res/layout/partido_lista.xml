@@ -55,7 +55,7 @@
                     android:layout_height="wrap_content"
                     tools:text="@string/item_title"
                     android:textAppearance="?attr/textAppearanceListItem"
-                    android:textSize="@dimen/partido_nombre_equipo"
+                    android:textSize="@dimen/partido_nombre_equipo" android:
                     android:maxLength="16"
                     android:ellipsize="end" />
                 <TextView
