@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="@dimen/md_keylines"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_gravity="center"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="@dimen/md_entreelementos"
+        android:layout_gravity="right"
+        android:gravity="right"
+        >
+        <ImageView
+        android:id="@+id/escudo_equipo_local"
+        android:layout_width="@dimen/avator_size"
+        android:layout_height="@dimen/avator_size"
+        android:scaleType="fitCenter"
+        tools:src="@drawable/a_avator" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nombre_equipo_local"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/item_title"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textSize="@dimen/partido_nombre_equipo"
+                    android:maxLength="16"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/goles_local"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    tools:text="10"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textSize="@dimen/partido_nombre_equipo"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:layout_marginLeft="@dimen/md_entreelementos"/>
+                </LinearLayout>
+
+            <TextView
+                android:id="@+id/partido_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/medium_grey"
+                android:maxLines="1"
+                tools:text="5/10/2015"
+                android:gravity="right"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="@dimen/partido_fecha_hora"
+                android:layout_marginLeft="@dimen/md_keylines" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="@dimen/md_entreelementos"
+        android:layout_gravity="left">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/goles_visitante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    tools:text="0  "
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textSize="@dimen/partido_nombre_equipo"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    android:layout_marginRight="@dimen/md_entreelementos" />
+                <TextView
+                    android:id="@+id/nombre_equipo_visitante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/item_title"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textSize="@dimen/partido_nombre_equipo"
+                    android:maxLength="16"
+                    android:ellipsize="end"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/partido_hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/medium_grey"
+                tools:text="17:00"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="@dimen/partido_fecha_hora" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/escudo_equipo_visitante"
+            android:layout_width="@dimen/avator_size"
+            android:layout_height="@dimen/avator_size"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/a_avator" />
+
+    </LinearLayout>
+
+</LinearLayout>
