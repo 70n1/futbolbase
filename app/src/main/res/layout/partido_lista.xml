@@ -58,7 +58,6 @@
                     android:textSize="@dimen/partido_nombre_equipo"
                     android:maxLength="16"
                     android:ellipsize="end" />
-
                 <TextView
                     android:id="@+id/goles_local"
                     android:layout_width="wrap_content"
