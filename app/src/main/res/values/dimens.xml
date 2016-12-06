@@ -20,11 +20,13 @@
     <dimen name="card_height">304dp</dimen>
     <dimen name="md_keylines">10dp</dimen>
     <dimen name="md_entreelementos">4dp</dimen>
+    <dimen name="md_clasificacion">4dp</dimen>
     <dimen name="tile_padding">8dp</dimen>
     <dimen name="tile_height">160dp</dimen>
     <dimen name="app_bar_height">256dp</dimen>
     <dimen name="article_keylines">72dp</dimen>
     <dimen name="avator_size">40dp</dimen>
+    <dimen name="subir_bajar_size">10dp</dimen>
     <dimen name="card_title_height">40dp</dimen>
     <dimen name="article_titles">20sp</dimen>
     <dimen name="cards_button_width">48dp</dimen>
