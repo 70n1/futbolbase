@@ -37,7 +37,7 @@ import android.widget.TextView;
 /**
  * Provides UI for the view with Cards.
  */
-public class CardContentFragment extends Fragment {
+public class CardContentFragment extends Fragment{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
