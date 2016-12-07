@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_buscar"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Buscar competición"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_jornada"
+        android:title="Jornada 7 21/08"
+        android:orderInCategory="200"
+        app:showAsAction="always|withText"
+        android:icon="@android:drawable/ic_menu_my_calendar">
+        <menu android:id="@+id/menu_jornadas">
+            <item android:title = "Jornada 1 21/08"></item>
+            <item android:title = "Jornada 3 21/08"></item>
+            <item android:title = "Jornada 4 21/08"></item>
+            <item android:title = "Jornada 5 21/08"></item>
+            <item android:title = "Jornada 6 21/08"></item>
+            <item android:title = "Jornada 7 21/08" android:checked="true" android:checkable="true" ></item>
+            <item android:title = "Jornada 8 21/08"></item>
+            <item android:title = "Jornada 9 21/08"></item>
+            <item android:title = "Jornada 10 21/08"></item>
+            <item android:title = "Jornada 11 21/08"></item>
+            <item android:title = "Jornada 12 21/08"></item>
+        </menu>
+    </item>
+</menu>
